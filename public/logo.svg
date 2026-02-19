@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="3dHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#FFF;stop-opacity:0" />
+    </linearGradient>
+    <filter id="shadowAndGlow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Ring / Shutter Blades simulating a lens -->
+  <g filter="url(#shadowAndGlow)">
+    <circle cx="256" cy="256" r="240" fill="url(#primaryGradient)" />
+    <circle cx="256" cy="256" r="220" fill="#FFF" opacity="0.1" />
+  </g>
+
+  <!-- Inner Spark / Star Shape -->
+  <path d="M256 80 L296 216 L432 256 L296 296 L256 432 L216 296 L80 256 L216 216 Z" fill="#FFF" filter="url(#shadowAndGlow)"/>
+  
+  <!-- 3D Overlay on Spark -->
+  <path d="M256 80 L296 216 L432 256 L296 296 L256 432 L216 296 L80 256 L216 216 Z" fill="url(#3dHighlight)"/>
+
+  <!-- Center Aperture Detail -->
+  <circle cx="256" cy="256" r="40" fill="#D97706" />
+</svg>

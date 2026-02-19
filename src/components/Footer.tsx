@@ -60,9 +60,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">{t('Contact Us', 'تواصل معنا')}</h4>
             <div className="flex flex-col gap-3 text-sm text-muted-foreground">
-              <a href="tel:0782633162" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <a href="tel:0782300589" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>0782633162</span>
+                <span>0782300589</span>
               </a>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />

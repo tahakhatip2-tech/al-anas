@@ -11,7 +11,7 @@ import portfolio6 from '@/assets/portfolio-6.jpg';
 const Services = () => {
   const { t } = useLanguage();
 
-  const whatsappUrl = `https://wa.me/962782633162?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/962782300589?text=${encodeURIComponent(
     t('Hello, I would like to book an event.', 'مرحباً، أود حجز موعد لتصوير أو إدارة فعالية.')
   )}`;
 

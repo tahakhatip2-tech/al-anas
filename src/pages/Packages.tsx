@@ -6,7 +6,7 @@ const Packages = () => {
   const { t } = useLanguage();
 
   const whatsappUrl = (pkg: string) =>
-    `https://wa.me/962782633162?text=${encodeURIComponent(
+    `https://wa.me/962782300589?text=${encodeURIComponent(
       t(`Hello, I would like to book the ${pkg} package.`, `مرحباً، أود حجز باقة ${pkg}.`)
     )}`;
 
@@ -75,11 +75,10 @@ const Packages = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
-                className={`rounded-2xl p-8 relative ${
-                  pkg.featured
+                className={`rounded-2xl p-8 relative ${pkg.featured
                     ? 'gradient-primary text-primary-foreground shadow-glow scale-105'
                     : 'bg-background shadow-card'
-                }`}
+                  }`}
               >
                 {pkg.featured && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-accent text-accent-foreground text-xs font-bold rounded-full">
@@ -100,11 +99,10 @@ const Packages = () => {
                   href={whatsappUrl(pkg.nameKey)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-opacity hover:opacity-90 ${
-                    pkg.featured
+                  className={`w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-opacity hover:opacity-90 ${pkg.featured
                       ? 'bg-background text-foreground'
                       : 'gradient-primary text-primary-foreground shadow-glow'
-                  }`}
+                    }`}
                 >
                   <MessageCircle className="w-5 h-5" />
                   {t('Book This Package', 'احجز هذه الباقة')}

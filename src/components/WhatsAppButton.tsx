@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 
 const WhatsAppButton = () => {
   const { t } = useLanguage();
-  
+
   const message = t(
     'Hello, I would like to book an event.',
     'مرحباً، أود حجز موعد لتصوير أو إدارة فعالية.'
   );
 
-  const url = `https://wa.me/962782633162?text=${encodeURIComponent(message)}`;
+  const url = `https://wa.me/962782300589?text=${encodeURIComponent(message)}`;
 
   return (
     <motion.a

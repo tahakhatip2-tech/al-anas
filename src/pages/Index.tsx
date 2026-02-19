@@ -19,7 +19,7 @@ const fadeUp = {
 const Index = () => {
   const { t, lang } = useLanguage();
 
-  const whatsappUrl = `https://wa.me/962782633162?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/962782300589?text=${encodeURIComponent(
     t('Hello, I would like to book an event.', 'مرحباً، أود حجز موعد لتصوير أو إدارة فعالية.')
   )}`;
 
@@ -87,7 +87,7 @@ const Index = () => {
                 {t('Book via WhatsApp', 'احجز عبر واتساب')}
               </a>
               <a
-                href="tel:0782633162"
+                href="tel:0782300589"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-primary-foreground/30 font-semibold hover:bg-primary-foreground/10 transition-colors"
                 style={{ color: 'white' }}
               >

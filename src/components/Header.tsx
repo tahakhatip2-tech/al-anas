@@ -39,8 +39,8 @@ const Header = () => {
                 key={item.path}
                 to={item.path}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${location.pathname === item.path
-                    ? 'gradient-primary text-primary-foreground'
-                    : 'text-foreground/70 hover:text-foreground hover:bg-muted'
+                  ? 'gradient-primary text-primary-foreground'
+                  : 'text-foreground/70 hover:text-foreground hover:bg-muted'
                   }`}
               >
                 {item.label}
@@ -51,11 +51,11 @@ const Header = () => {
           {/* Controls */}
           <div className="flex items-center gap-2">
             <a
-              href="tel:0782633162"
+              href="tel:0782300589"
               className="hidden md:flex items-center gap-1 text-sm text-primary font-medium hover:opacity-80 transition-opacity"
             >
               <Phone className="w-4 h-4" />
-              <span>0782633162</span>
+              <span>0782300589</span>
             </a>
 
             <button
@@ -107,8 +107,8 @@ const Header = () => {
                   to={item.path}
                   onClick={() => setMobileOpen(false)}
                   className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${location.pathname === item.path
-                      ? 'gradient-primary text-primary-foreground'
-                      : 'text-foreground/70 hover:text-foreground hover:bg-muted'
+                    ? 'gradient-primary text-primary-foreground'
+                    : 'text-foreground/70 hover:text-foreground hover:bg-muted'
                     }`}
                 >
                   {item.label}

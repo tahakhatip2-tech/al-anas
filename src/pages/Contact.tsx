@@ -7,14 +7,14 @@ const Contact = () => {
   const { t } = useLanguage();
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
 
-  const whatsappUrl = `https://wa.me/962782633162?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/962782300589?text=${encodeURIComponent(
     t('Hello, I would like to book an event.', 'مرحباً، أود حجز موعد لتصوير أو إدارة فعالية.')
   )}`;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const msg = `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nMessage: ${formData.message}`;
-    window.open(`https://wa.me/962782633162?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/962782300589?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (
@@ -70,7 +70,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={e => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                      placeholder="0782633162"
+                      placeholder="0782300589"
                     />
                   </div>
                 </div>
@@ -101,13 +101,13 @@ const Contact = () => {
               <div className="bg-card rounded-2xl p-6 shadow-card">
                 <h3 className="font-display text-lg font-semibold text-foreground mb-4">{t('Get in Touch', 'تواصل معنا')}</h3>
                 <div className="space-y-4">
-                  <a href="tel:0782633162" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
+                  <a href="tel:0782300589" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors">
                     <div className="w-10 h-10 rounded-full gradient-primary flex items-center justify-center shrink-0">
                       <Phone className="w-5 h-5 text-primary-foreground" />
                     </div>
                     <div>
                       <p className="text-sm font-medium text-foreground">{t('Phone', 'الهاتف')}</p>
-                      <p className="text-sm">0782633162</p>
+                      <p className="text-sm">0782300589</p>
                     </div>
                   </a>
                   <div className="flex items-center gap-3 text-muted-foreground">

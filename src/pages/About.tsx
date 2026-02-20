@@ -19,11 +19,11 @@ const About = () => {
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-3xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
-              {t('About Al-Ons', 'عن الأُنس')}
+              {t('About al-aanas', 'عن الأُنس')}
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed">
               {t(
-                'Al-Ons is a premier event photography and management company dedicated to turning your most important celebrations into timeless memories. Founded with a passion for storytelling through images, we have grown to become one of the most trusted names in the event industry.',
+                'al-aanas is a premier event photography and management company dedicated to turning your most important celebrations into timeless memories. Founded with a passion for storytelling through images, we have grown to become one of the most trusted names in the event industry.',
                 'الأُنس هي شركة رائدة في تصوير وإدارة الفعاليات، مكرسة لتحويل أهم احتفالاتكم إلى ذكريات خالدة. تأسسنا بشغف لرواية القصص من خلال الصور، ونمونا لنصبح أحد أكثر الأسماء موثوقية في صناعة الفعاليات.'
               )}
             </p>

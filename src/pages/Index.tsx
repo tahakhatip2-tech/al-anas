@@ -31,7 +31,7 @@ const Index = () => {
   ];
 
   const testimonials = [
-    { name: t('Sarah & Ahmad', 'سارة وأحمد'), text: t('Al-Ons made our wedding absolutely magical. The photos are breathtaking!', 'جعل فريق الأُنس حفل زفافنا سحرياً. الصور خلابة!'), role: t('Wedding Couple', 'عروسان') },
+    { name: t('Sarah & Ahmad', 'سارة وأحمد'), text: t('al-aanas made our wedding absolutely magical. The photos are breathtaking!', 'جعل فريق الأُنس حفل زفافنا سحرياً. الصور خلابة!'), role: t('Wedding Couple', 'عروسان') },
     { name: t('Noor Events Co.', 'شركة نور للفعاليات'), text: t('Professional, creative, and always delivering beyond expectations.', 'محترفون ومبدعون ويتجاوزون التوقعات دائماً.'), role: t('Corporate Client', 'عميل مؤسسي') },
     { name: t('Layla Hassan', 'ليلى حسن'), text: t('The best event management team we have ever worked with. Highly recommend!', 'أفضل فريق إدارة فعاليات تعاملنا معه. ننصح بهم بشدة!'), role: t('Birthday Party', 'حفلة عيد ميلاد') },
   ];
@@ -39,7 +39,7 @@ const Index = () => {
   return (
     <>
       {/* SEO */}
-      <title>{t('Al-Ons Event Photography & Event Management', 'الأُنس لتصوير الفعاليات وإدارة المناسبات')}</title>
+      <title>{t('al-aanas Event Photography & Event Management', 'الأُنس لتصوير الفعاليات وإدارة المناسبات')}</title>
 
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
@@ -55,7 +55,7 @@ const Index = () => {
               variants={fadeUp}
               className="text-secondary text-sm md:text-base uppercase tracking-widest mb-4 font-medium"
             >
-              {t('Al-Ons Event Photography', 'الأُنس لتصوير الفعاليات')}
+              {t('al-aanas Event Photography', 'الأُنس لتصوير الفعاليات')}
             </motion.p>
             <motion.h1
               custom={1}

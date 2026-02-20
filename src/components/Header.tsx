@@ -26,9 +26,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src="/og-image.png" alt="Al-Ons Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain rounded-full" />
+            <img src="/og-image.png" alt="al-aanas Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain rounded-full" />
             <span className="text-xl md:text-2xl font-display font-bold gradient-text">
-              {t('Al-Ons', 'الأُنس')}
+              {t('al-aanas', 'الأُنس')}
             </span>
           </Link>
 

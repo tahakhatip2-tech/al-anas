@@ -12,8 +12,8 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-display font-bold gradient-text mb-4 flex items-center gap-2">
-              <img src="/og-image.png" alt="Al-Ons Logo" className="w-8 h-8 object-contain rounded-full" />
-              {t('Al-Ons', 'الأُنس')}
+              <img src="/og-image.png" alt="al-aanas Logo" className="w-8 h-8 object-contain rounded-full" />
+              {t('al-aanas', 'الأُنس')}
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {t(
@@ -91,8 +91,31 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© 2025 {t('Al-Ons Event Photography & Event Management', 'الأُنس لتصوير الفعاليات وإدارة المناسبات')}. {t('All rights reserved.', 'جميع الحقوق محفوظة.')}</p>
+        <div className="mt-10 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+          <p>© 2025 {t('al-aanas Event Photography & Event Management', 'الأُنس لتصوير الفعاليات وإدارة المناسبات')}. {t('All rights reserved.', 'جميع الحقوق محفوظة.')}</p>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="flex items-center gap-2 text-xs md:text-sm"
+          >
+            <span>{t('Developed by', 'تم تطوير وبرمجة الموقع بواسطة')}</span>
+            <motion.span
+              animate={{
+                color: ["#F59E0B", "#D97706", "#F59E0B"],
+                scale: [1, 1.05, 1]
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="font-bold cursor-default"
+            >
+              {t('Al-Khatib Software', 'الخطيب للبرمجيات')}
+            </motion.span>
+          </motion.div>
         </div>
       </div>
     </footer>

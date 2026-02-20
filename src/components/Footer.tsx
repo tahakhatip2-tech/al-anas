@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-display font-bold gradient-text mb-4 flex items-center gap-2">
-              <img src="/logo.svg" alt="Al-Ons Logo" className="w-8 h-8 object-contain" />
+              <img src="/og-image.png" alt="Al-Ons Logo" className="w-8 h-8 object-contain rounded-full" />
               {t('Al-Ons', 'الأُنس')}
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
